@@ -1,0 +1,384 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>MongoDB</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/sky.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+
+<body>
+	<div class="reveal">
+		<s class="slides">
+			<section data-background="#4d7e65" data-transition="slide-in fade-out " data-timing="10">
+				<h1>MongoDB</h1>
+				<aside class="notes">
+					MongoDB is an open source NoSQL database management program. So maybe you have a question what is
+					database is ?
+				</aside>
+			</section>
+			<section data-transition="slide-in fade-out ">
+				<section>
+					<h2>Database</h2>
+					<p data-transition="slide-in fade-out ">Organized collection of data</p>
+					<aside class="notes">
+						A database is an organized collection of data, generally stored and accessed electronically from a
+						computer system.
+					</aside>
+				</section>
+				<section>
+					<h2>Example:</h2>
+					<ol>
+						<li class="fragment fade-up">
+							Phone book
+						</li>
+						<li class="fragment fade-up">
+							Registry in a hospital.
+						</li>
+						<li class="fragment fade-up">
+							Gradebook
+						</li>
+					</ol>
+					<aside class="notes">
+						Some examples in life are: Phone book,Registry in a hospital, Gradebook
+					</aside>
+				</section>
+			</section>
+			<section data-transition="slide-in fade-out ">
+				<h3>Two major types of databases</h3>
+				<ol>
+					<li class="fragment fade-up">
+						Relational database
+					</li>
+					<li class="fragment fade-up">
+						NoSQL database
+					</li>
+				</ol>
+				<aside class="notes">
+					There ara many different type of databases, but the most popular types are: Relational database(SQL) and
+					NoSQL
+				</aside>
+			</section>
+			<section>
+				<section>
+					<h2>Relational database</h2>
+					<p class="fragment fade-up">A relational database is a collection of data items with pre-defined relationships between them</p>
+					<img src="./assets/relation.png" alt="relation"
+						style="height: 300px; margin: 0 auto 4rem auto; background: transparent;" class="fragment fade-up">
+					<aside class="notes">
+						A relational database is a collection of data items with pre-defined relationships between them. These items are organized as a set of tables with columns and rows. Tables are used to hold information about the objects to be represented in the database.
+					</aside>
+				</section>
+				<section>
+					<h2>SQL</h2>
+					<p class="fragment fade-up">Stands for Structured Query Language</p>
+					<p class="fragment fade-up">Name of a standard language for communicating with relational databases</p>
+					<aside class="notes">
+						For communicating with relational databases use SQL
+						SQL stands for Structured Query Language.
+						In short, it is the name of a standard language for communicating with relational databases. It can pull, edit, add, search, update, and delete information in the database records
+					</aside>
+				</section>
+				<section>
+					<h2>Advantages of SQL</h2>
+					<p class="fragment fade-up">Data Accuracy</p>
+					<p class="fragment fade-up">Normalization</p>
+					<p class="fragment fade-up">High Security</p>
+					<aside class="notes">
+						Data Accuracy: In the relational database system, there can be multiple tables related to one another with the use of a primary key and foreign key concepts. This makes the data to be non-repetitive. There is no chance for duplication of data.
+
+						Normalization: The methodical style is maintained for making sure of a relational database structure is liberated of any variances that can make a difference in the integrity and accuracy of the tables in the database. 
+
+						High Security: As the data is divided amongst the tables of the relational database system, it is possible to make a few tables to be tagged as confidential and others not. 
+					</aside>
+				</section>
+				<section>
+					<h3>Additional information about relation database:</h3>
+					<a
+						href="https://www.oracle.com/database/what-is-a-relational-database/">www.oracle.com/database/what-is-a-relational-database/</a>
+					<br />
+					<a href="https://aws.amazon.com/relational-database/">aws.amazon.com/relational-database/</a>
+					<aside class="notes">
+						You can read more about the relation type of database on this pages.
+					</aside>
+				</section>
+			</section>
+			<section>
+				<section>
+					<h2>NoSQL database</h2>
+					<p class="fragment fade-up">Stands for "not only SQL"</p>
+					<p class="fragment fade-up">non-relational data management system</p>
+					<aside class="notes">
+						NoSQL is Stands for "not only SQL". NoSQL Database is a non-relational data management system, that
+						does not require a fixed schema. It avoids joins, and is easy to scale. The major purpose of using a
+						NoSQL database is for distributed data stores with humongous data storage needs.
+					</aside>
+				</section>
+				<section>
+					<h2>Advantages of NoSQL</h2>
+					<p class="fragment fade-up">Elastic scalability</p>
+					<p class="fragment fade-up">Big data applications</p>
+					<p class="fragment fade-up">Database administration</p>
+					<p class="fragment fade-up">Economy</p>
+					<aside class="notes">
+						Elastic scalability: NoSQL databases are made for transparent expansion, taking advantage of new nodes. These databases are designed for use with low-cost commodity hardware.
+						
+						Big data applications: With SQL handling Big data is very costly as you will have to increase the hardware for scaling.
+						NoSQL makes it easy to store all different types of data together and without having to invest time into defining what type of data you’re storing in advance.
+
+						Database administration:  NoSQL databases require much less hands-on management than relation database with data distribution and auto repair capabilities, simplified data models and fewer tuning and administration requirements.
+
+						Economy: NoSQL databases can be easily installed in cheap commodity hardware clusters as transaction and data volumes increase. This means that you can process and store more data at much less cost.
+					</aside>
+				</section>
+				<section>
+					<h2>Types of NoSQL Databases</h2>
+					<aside class="notes">
+						There are four types of nosql db
+					</aside>
+				</section>
+				<section>
+					<h2 >Key-value Pair Based</h2>
+					<img src="./assets/KeyValue.png" alt="relation"
+						style="height: 300px; margin: 0 auto 4rem auto; background: transparent;" class="fragment fade-up">
+					<aside class="notes">
+						Key Value Pair Based
+						Data is stored in key/value pairs. It is designed in such a way to handle lots of data and heavy load.
+					</aside>
+				</section>
+				<section>
+					<h2>Column-oriented</h2>
+					<img src="./assets/column-based.png" alt="relation"
+						style="height: 300px; margin: 0 auto 4rem auto; background: transparent;" class="fragment fade-up">
+					<aside class="notes">
+						Column-oriented databases work on columns. Every column is treated separately. Values of single column databases are stored contiguously.
+					</aside>
+				</section>
+				<section>
+					<h2 >Graphs based</h2>
+					<img src="./assets/GraphDatabase.png" alt="relation"
+						style="height: 400px; margin: 0 auto 4rem auto; background: transparent;" class="fragment fade-up">
+					<aside class="notes">
+						A graph type database stores entities as well the relations amongst those entities. The entity is stored as a node with the relationship as edges. An edge gives a relationship between nodes. Every node and edge has a unique identifier.
+					</aside>
+				</section>
+				<section>
+					<h2 >Document-oriented</h2>	
+					<img src="./assets/document-oriented.png" alt="relation"
+						style="height: 400px; margin: 0 auto 4rem auto; background: transparent;" class="fragment fade-up">
+					<aside class="notes">
+						Document-Oriented NoSQL DB stores and retrieves data as a key value pair but the value part is stored as a document. The document is stored in JSON or XML formats. The value is understood by the DB and can be queried.
+					</aside>
+				</section>
+				<section>
+					<h2>Who use NoSQL</h2>
+					<p class="fragment fade-up">Twitter</p>
+					<p class="fragment fade-up">Facebook</p>
+					<p class="fragment fade-up">Google</p>
+					<p class="fragment fade-up">Amazon</p>
+					<aside class="notes">
+						Who use NoSQL
+						For example, companies like Twitter, Facebook and Google collect terabytes of user data every single day.
+					</aside>
+				</section>
+			</section>
+			<section data-background="#4d7e65">
+				<section>
+					<h2>What is MongoDB?</h2>
+					<aside class="notes">
+						So, lets come back to MongoDB and answer what is MongoDB
+					</aside>
+				</section>
+			<section >
+				<p>MongoDB is a document-oriented NoSQL database used for high volume data storage.</p>
+				<aside class="notes">
+					MongoDB is a document-oriented NoSQL database used for high volume data storage. Instead of using tables and rows as in the traditional relational databases, MongoDB makes use of collections and documents. Documents consist of key-value pairs which are the basic unit of data in MongoDB. Collections contain sets of documents and function which is the equivalent of relational database tables.
+				</aside>
+			</section>
+		</section>
+		<section data-background="#4d7e65">
+			<section>
+				<h2>MongoDB Features</h2>
+				<aside class="notes">
+					So, lets come back to MongoDB and answer what is MongoDB
+				</aside>
+			</section>
+		<section >
+			<p>Each database contains collections which in turn contains documents</p>
+			<aside class="notes">
+				Each database contains collections which in turn contains documents. Each document can be different with a varying number of fields. The size and content of each document can be different from each other.
+			</aside>
+		</section>
+		<section >
+			<p>The document structure is more in line with how developers construct their classes and objects in their respective programming languages.</p>
+			<aside class="notes">
+				The document structure is more in line with how developers construct their classes and objects in their respective programming languages. Developers will often say that their classes are not rows and columns but have a clear structure with key-value pairs.
+			</aside>
+		</section>
+		<section >
+			<p>The rows (or documents as called in MongoDB) doesn't need to have a schema defined beforehand</p>
+			<aside class="notes">
+				The rows (or documents as called in MongoDB) doesn't need to have a schema defined beforehand. Instead, the fields can be created on the fly.
+			</aside>
+		</section>
+		<section >
+			<p>The data model available within MongoDB allows you to represent hierarchical relationships, to store arrays, and other more complex structures more easily.</p>
+			<aside class="notes">
+				The data model available within MongoDB allows you to represent hierarchical relationships, to store arrays, and other more complex structures more easily.
+			</aside>
+		</section>
+	</section>
+	<section data-background="#4d7e65">
+		<section>
+			<h3>MongoDB example</h3>
+			<pre><code>{
+	_id: ObjectId(3da252d3902a),
+	type: "Presintation",
+	title: "MongoDB",
+	author: "Borisov A",
+	tags: [ "mongodb", "compass", "crud" ],
+	categories: [
+	  {
+		 name: "javascript",
+		 description: "Presintation"
+	  },
+	],
+	content: "MongoDB is a cross-platform..."
+ }
+			</code></pre>
+			<aside class="notes">
+				As you can see, the document has a number of fields(type , title ), which store values(Presintation). These values can contain strings, numbers, arrays, arrays of sub-documents (for example, the categories field), geo-coordinates and more.
+				The _id field name is reserved for use as a primary key. Its value must be unique in the collection, it’s immutable, and it may be of any type other than an array.
+			</aside>
+		</section>
+	
+	</section>
+	<section data-background="#4d7e65">
+		<section>
+			<h2>MongoDB CRUD</h2>
+			<aside class="notes">
+				As you might already know, the CRUD acronym stands for create, read, update, and delete. These are the four basic database operations that you can’t avoid while building an application. 
+			</aside>
+		</section>
+		<section>
+			<h3>Create Operation</h3>
+			<p><pre><code>db.COLLECTION_NAME.insertOne({"key":"value"})</code></pre></p>
+			<p><pre><code>db.COLLECTION_NAME.insertMany([&lt;document 1&gt;,&lt;document 2&gt;, ... ])</code></pre></p>
+			<aside class="notes">
+				Creation is the same as inserting a document into a collection.
+				To insert a document, you can use db.COLLECTION_NAME.insertOne for 1 doc or insertMany for many doc 
+			</aside>
+		</section>
+		<section>
+			<h3>Example</h3>
+			<p><pre><code>&gt; db.users.insertOne({name: "Bob"})
+{
+	"acknowledged" : true,
+	"insertedId" : ObjectId("5a52c53b223039ee9c2daaec")
+}</code></pre></p>
+			<aside class="notes">
+				MongoDB automatically creates a new users collection and inserts a document with the key–value pair 'name':'Bob'. The ObjectId returned is the ID of the document inserted. MongoDB creates a unique ObjectId for each document on creation, and it becomes the default value of the _id field.
+			</aside>
+		</section>
+		<section>
+			<h3 >Read Operation</h3>
+			<p ><pre><code>db.collection.find(query, projection)</code></pre></p>
+			<p ><pre><code>db.collection.findOne(query, projection)</code></pre></p>
+			<aside class="notes">
+				A read operation is used to retrieve a document, or multiple documents from a collection.
+				db.collection.find(query, projection)
+			</aside>
+		</section>
+		<section>
+			<h3>Example</h3>
+			<p><pre><code>&gt; db.users.find().pretty()
+{
+	"_id" : ObjectId("5e25bb58ba0cf16476aa56ff"),
+	"name" : "Tom",
+	"age" : 15,
+	"email" : "tom@example.com"
+}</code></pre></p>
+			<aside class="notes">
+				To retrieve all user documents, you can do db.users.find().pretty() The pretty method is a cursor method
+			</aside>
+		</section>
+		<section>
+			<h3 >Update Operation</h3>
+			<p><pre><code>db.collection.updateOne(&lt;filter&gt;, &ltupdate&gt;, &lt;options&gt;)</code></pre></p>
+			<p><pre><code>db.collection.updateMany(&lt;filter&gt;, &ltupdate&gt;, &lt;options&gt;)</code></pre></p>
+			<aside class="notes">
+				An update operation modifies documents in a collection. Similar to the create operation, MongoDB offers various methods for updating a document. For example:
+			</aside>
+		</section>
+		<section>
+			<h3>Example</h3>
+			<p><pre><code>&gt; db.users.updateMany({}, {$set: { registration: "incomplete"}})
+{ "acknowledged" : true, 
+	"matchedCount" : 4, 
+	"modifiedCount" : 4
+}
+</code></pre></p>
+			<aside class="notes">
+				The first argument is an empty object because we want to update all documents in the collection. The $set is an update operator that sets the value of a field with the specified value. You can verify that the extra field was added using db.users.find()
+			</aside>
+		</section>
+		<section>
+			<h3 >Delete Operation</h3>
+			<p><pre><code>db.collection.deleteOne(&lt;filter&gt;,&lt;options&gt;)</code></pre></p>
+			<p><pre><code>db.collection.deleteMany(&lt;filter&gt;,&lt;options&gt;)</code></pre></p>
+			<aside class="notes">
+				A delete operation removes a document from the collection. To delete a document, you can use the deleteOne method, and to delete multiple documents, you can use the deleteMany method.
+			</aside>
+		</section>
+		<section>
+			<h3>Example</h3>
+			<p><pre><code>&gt; db.users.updateOne(
+{email: "tom@example.com" },
+{$set: { status: "dormant"}
+})
+{ "acknowledged" : true, 
+  "matchedCount" : 1,
+  "modifiedCount" : 1
+}
+&gt;db.users.deleteMany({status:{$in: [ "dormant", "inactive" ]}})
+{ "acknowledged" : true, "deletedCount" : 1 }
+</code></pre></p>
+			<aside class="notes">
+				To delete documents based on certain criteria, you can use the filter operators 
+				This deletes all documents with a status of “dormant” or “inactive”
+			</aside>
+		</section>
+	</section>
+	<section data-background="#4d7e65">
+		<h1 >Thank you</h1>
+	</section>
+			</class>
+	</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+		});
+	</script>
+</body>
+
+</html>
